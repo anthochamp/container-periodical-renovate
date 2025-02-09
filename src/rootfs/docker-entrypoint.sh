@@ -41,11 +41,11 @@ export RENOVATE_BASE_DIR="${RENOVATE_BASE_DIR:-/tmp/renovate}"
 export RENOVATE_CACHE_DIR="${RENOVATE_CACHE_DIR:-$RENOVATE_BASE_DIR/cache}"
 
 if [ -d "$RENOVATE_BASE_DIR" ]; then
-	chown ubuntu:ubuntu "$RENOVATE_BASE_DIR"
+	chown -hR ubuntu:ubuntu "$RENOVATE_BASE_DIR"
 fi
 
 if [ -d "$RENOVATE_CACHE_DIR" ]; then
-	chown ubuntu:ubuntu "$RENOVATE_CACHE_DIR"
+	chown -hR ubuntu:ubuntu "$RENOVATE_CACHE_DIR"
 fi
 
 while
