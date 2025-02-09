@@ -1,6 +1,9 @@
 FROM renovate/renovate:39@sha256:ab3fee4aaa44c38f9dcd87ee46b44d658fa5022372ba8a586bba3da27044080f
 
-# renovate sets user to 1000 (ubuntu), we need root for apt & chown later
+# renovate sets user/group to 12021:12021 (ubuntu:ubuntu)
+# https://docs.renovatebot.com/release-notes-for-major-versions/#new-docker-user-id-for-all-docker-images
+# We need root access on docker-entrypoint.sh, lets put back initial user 0 and
+# we'll execute renovate with runuser.
 # hadolint ignore=DL3002
 USER 0
 
