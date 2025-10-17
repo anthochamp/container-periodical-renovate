@@ -1,4 +1,4 @@
-FROM renovate/renovate:41.149.2@sha256:d8a0416237522b3b90463a2e462d9ffa213761b714cf53443cf82cbe46d2b0d3
+FROM renovate/renovate:41.151.1@sha256:5a77a65597b7d3d2341f9b810f8939739b91c8e138762812a7c3c808a003e445
 
 # renovate sets user/group to 12021:12021 (ubuntu:ubuntu)
 # https://docs.renovatebot.com/release-notes-for-major-versions/#new-docker-user-id-for-all-docker-images
