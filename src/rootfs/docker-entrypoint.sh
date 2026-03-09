@@ -49,7 +49,7 @@ if [ -d "$RENOVATE_CACHE_DIR" ]; then
 fi
 
 while
-	runuser -u ubuntu -- /usr/local/sbin/renovate-entrypoint.sh "$@"
+	gosu ubuntu /usr/local/sbin/renovate-entrypoint.sh "$@"
 
 	if [ "$1" != 'renovate' ]; then
 		break
