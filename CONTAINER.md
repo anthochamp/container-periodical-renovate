@@ -15,9 +15,16 @@ See [README.md](README.md) for full documentation and configuration reference.
 
 - `x.y-renovateA.B.C`: Latest patch of `x.y` with Renovate `A.B.C`.
 - `x-renovateA.B.C`: Latest minor+patch of `x` with Renovate `A.B.C`.
+- `x.y.z-renovateA.B`: Version `x.y.z` with latest patch of Renovate `A.B` (only latest container version updated).
+- `x.y-renovateA.B`: Latest patch of `x.y` with latest patch of Renovate `A.B`.
+- `x-renovateA.B`: Latest minor+patch of `x` with latest patch of Renovate `A.B`.
+- `x.y.z-renovateA`: Version `x.y.z` with latest minor+patch of Renovate `A` (only latest container version updated).
+- `x.y-renovateA`: Latest patch of `x.y` with latest minor+patch of Renovate `A`.
+- `x-renovateA`: Latest minor+patch of `x` with latest minor+patch of Renovate `A`.
 - `x.y.z`: Version `x.y.z` with latest Renovate (only latest container version updated).
-- `x.y`: Latest patch of `x.y` with latest Renovate (only latest container major.minor updated).
-- `x`: Latest minor+patch of `x` with latest Renovate (only latest container major updated).
+- `x.y`: Latest patch of `x.y` with latest Renovate.
+- `x`: Latest minor+patch of `x` with latest Renovate.
+- `renovateA.B.C`: Latest container with Renovate `A.B.C`.
 - `renovateA.B`: Latest container with latest patch of Renovate `A.B`.
 - `renovateA`: Latest container with latest minor+patch of Renovate `A`.
 - `latest`: Latest `x.y.z-renovateA.B.C` tag.

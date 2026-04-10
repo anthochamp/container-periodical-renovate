@@ -1,5 +1,7 @@
 {
 	"private": true,
+	"description": "Renovate container configured to run automated dependency updates on a schedule",
+	"author": "Anthony Champagne <dev@anthonychampagne.fr>",
 	"scripts": {
 		"test": "node --import=tsx --test-concurrency 1 --test tests/**/*.test.*",
 		"tsc:check": "tsc -noEmit -p ./tsconfig.json",
